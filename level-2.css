@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+  img {
+    margin: 20px;
+    border: 15px solid black;
+    padding: 30px;
+  }
