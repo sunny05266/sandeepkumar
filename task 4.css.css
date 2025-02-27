@@ -1,0 +1,18 @@
+/*
+Make all <p> elements inside <div class="blog"> have blue text.
+Make only the direct <h2> children of <div class="blog"> have red text.
+Style the first paragraph (<p>) immediately after an <h2> inside .blog to have bold text.
+Style all paragraphs (<p>) that are after an <h2> inside .blog to have a light gray background. 
+*/
+div.blog p {
+    color: blue;
+}
+div.blog > h2 {
+    color: red;
+}
+div.blog > h2 + p{
+    font-weight: bold;
+}
+div.blog > h2 ~ p{
+    background-color: lightgray;
+}
