@@ -1,0 +1,32 @@
+/*
+TASK INSTRUCTIONS:
+
+1. Set a global font-family for the entire page and make all text inherit it.
+2. Change the text color of .container to dark blue and make all its child elements inherit it.
+3. Override the inherited text color in .content to a black color (don't explicitly set it to black color rather use one of the value from inherit, initial, unset or revert to do this)
+4. Ensure the <h1> inside .container has a specific color (e.g., red) that overrides the inherited one.
+5. Give .nested a 4px solid maroon border and check if its child <p> elements inherit it. If they don’t, ensure they inherit the border from their .nested parent
+6. The <p> elements inside .content should have the default text color but the one inside .nested should have a red color with a yellow background.
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: inherit;
+}
+.containor {
+    color: darkblue;
+    color: inherit;
+}
+.content {
+    color: initial;
+}
+.containor h1 {
+    color: red;
+}
+.nested {
+    border: 4px solid maroon;
+}
+.nested p {
+    border: inherit;
+    color: red;
+    background-color: yellow;
+}
